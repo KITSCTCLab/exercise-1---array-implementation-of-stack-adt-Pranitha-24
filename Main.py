@@ -2,9 +2,11 @@ import os
 class Stack:
     """ This class contains the stack and its size
     Attributes: 
-    items: It is the stack
-    Size: It holds the size of the stack"""
+        items: It is the stack
+        size: It holds the size of the stack"""
+    
     def __init__(self, size):
+        
         self.items = []
         self.size = size
 
@@ -18,19 +20,19 @@ class Stack:
 
     def push(self, data):
         """ The push function pushes or adds the data to the stack
-    Arguments:
-      data: it holds the value to be added to the stack """
+        Arguments:
+        data: it holds the value to be added to the stack """
+        
         if not self.is_full():
             self.items.append(data)
 
     def pop(self):
-      """the pop function pops or delets the top most data from the stack"""
+        """the pop function pops or deletes the top most data from the stack"""
         if not self.is_empty():
             self.items.pop(-1)
           
     def status(self):
-        """the status function pops or deletes the top most data from the stack """
-        
+        """The status function displays the element of the stack """
         for element in self.items:
             print(element)
            
