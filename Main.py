@@ -19,8 +19,8 @@ class Stack:
             self.items.pop(-1)
           
     def status(self):
-        for elements in self.items:
-            print(elements)
+        for element in self.items:
+            print(element)
 
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
